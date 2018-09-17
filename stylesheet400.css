@@ -1,0 +1,538 @@
+@media only screen and (max-width:400px) {
+    #navigation-bar{
+        width: 1130px;
+        height: 200px;
+        color: white;
+        background-color: #363636;
+        border-bottom-color: #E84130;
+        padding: 35px 0px 0px 0px;
+        }
+      #contact,#phone {
+        font-size: 30px;
+        }
+      #contact-details,#navigation {
+        float: initial;
+        margin: 0px 0px 35px -40px;
+        }
+      #phone,#hrline,#hrline2 {
+        border: none;
+        background: none;
+        float: left;
+        padding-right: 260px;
+        padding-top: 10px;
+        }
+      #social-media {
+        font-size: 35px;
+        position: relative;
+        color: white;
+        padding: 14px 0px 11px 0px;
+        margin: 0px -340px 0px 400px;
+        }
+      #company {
+        float: left;
+        font-size: 45px;
+        color: #E84130;
+        padding: 18px 0px 0px 0px;
+        margin: 20px 0px 20px 25px;
+        text-shadow: 0px 1px;
+        }
+    .save-life {
+        width: 1130px;
+        height: 500px;
+        position: relative;
+        text-align: center;
+        color: #FFFFFF;
+        filter:brightness(30%); 
+        }
+      .fieldset {
+        padding: 0px 130px 0px 126px;
+        margin: 5px 0px 0px -80px;
+        border: none;
+        border-bottom: none;
+        }
+      #save {
+        font-size: 60px;
+        color: #FFFFFF;
+        padding-top: 135px;
+        margin: 80px 100px 0px -290px;
+        border-bottom: 1px solid #E84130;
+        }
+      u {
+        border-bottom: 5px solid #E84130;
+      }
+      #savelife_text,#read-more,#btm-lft,#btm-rt {
+          visibility: hidden;
+        }
+      .form {
+        background-color: white;
+        color: #E5E5E5;
+        box-shadow: 10px 10px 10px 10px #D9D9D9;
+        position: absolute;
+        width: 950px;
+        padding: 90px 339px 0px 130px;
+        margin: 75px 0px 40px 85px;
+        height: 750px;
+        }
+      #title {
+        color: #A4A4A4;
+        font-size: 40px;
+        }
+      #input {
+        width: 650px;
+        height: 90px;
+        font-size: 30px;
+        background-color: #EDEDED;
+        margin: 0px 0px 50px 0px;
+        padding: 0px 0px 0px 40px;
+        border: none;
+        }
+      #checkbox {
+        color: #E84130;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 45px;
+        padding: 10px 0px 12px 10px;
+        }
+      #button {
+        background-color: #E84130;
+        width: 650px;
+        height: 85px;
+        font-size: 30px;
+        color: white;
+        padding: 20px 0px 20px 250px;
+        }
+      .info {
+        position: absolute;
+        margin: 1000px 0px 0px 100px;
+        padding: 0px 350px 0px 15px;
+        width: 1130px;
+        height: 100px;
+        text-shadow: 0px 1px;
+        }
+      #leave {
+        font-size: 55px;
+        text-shadow: 0px 1px;
+        padding: 10px 0px 50px 0px;
+        }
+      #msg {
+        color: #787878;
+        word-spacing: 8px;
+        width: 938px;
+        line-height: 60px;
+        font-size: 40px;
+        }
+      #Read {
+        padding: 50px 0px 0px 0px;
+        }
+      .options {
+        float: left;
+        position: relative;
+        top: 630px;
+        left: 5px;
+        width: 1130px;
+        padding: 0px 0px 0px 0px;
+        margin: 50px 0px 0px 0px;
+        height: 1080px;
+        }
+      #row {
+        float: left;
+        width: 700px;
+        height: 164px;
+        margin: 975px 0px 15px 50px;
+        padding: 0px 6px 0px 55px;
+        }
+      #col {
+        margin: 35px 0px 0px 0px;
+        border: 2px solid #E5E5E5;
+        width: 910px;
+        height: 350px;
+        float: left;
+        }
+      #box {
+        font-size: 40px;
+        border: none;
+        font-weight: 500;
+        padding: 50px 0px 0px 0px;
+        width: 403px;
+        margin: 15px 0px 0px 289px;
+        }
+      #icons {
+        float: left;
+        padding: 40px 40px 40px 40px;
+        margin: 50px 0px 0px 50px;
+        color: #E84130;
+        font-size: 50px;
+        background-color: white;
+        position: relative;
+        border: 2px solid #E5E5E5;
+        }
+      #text {
+        float: left;
+        color: #787878;
+        font-size: 32px;
+        width: 695px;
+        word-spacing: 5px;
+        margin: 10px 0px 2px -50px;
+        padding: 15px 78px 0px 155px;
+        }
+      .aboutus {
+        top: 2970px;
+        width: 1130px;
+        background-color:#f5f5f5;
+        height: 3300px;
+        }
+      #heading1,#heading2,#heading3,#heading4 {
+        text-align: center;
+        font-size: 70px;
+        margin-top: 90px;
+        text-shadow: 0px 1px;
+        }
+      #drop {
+        position: absolute;
+        font-size: 30px;
+        background-color: rgb(245, 245, 245);
+        color: rgb(226, 69, 53);
+        border-top: 5px solid rgb(226, 69, 53);
+        border-bottom: 5px solid rgb(226, 69, 53);
+        padding: 15px 30px 15px 30px;
+        margin: 0px 0px 0px 530px;
+        z-index: 2;
+        }
+      #hr_line {
+        position: relative;
+        width: 250px;
+        margin: 45px 0px 0px 445px;
+        border: 3px solid rgb(226, 69, 53);
+        }
+      #description {
+        text-align: center;
+        font-size: 35px;
+        width: 770px;
+        margin: 40px 10px 28px 210px;
+        padding: 20px 52px 0px 0px;
+        color: #8A8A8A;
+        }
+      #image1 {
+        object-position: center;
+        position: relative;
+        top: 80px;
+        width: 1050px;
+        left: 40px;
+        }
+      #about {
+        width: 940px;
+        font-size: 40px;
+        padding: 50px 0px 75px 0px;
+        }
+      #left_col {
+        float: left;
+        margin: 150px 0px 0px -160px;
+        }
+      #right_col {
+        float: right;
+        margin: 0px -210px 0px 42px;
+        }
+      #col_1 {
+        font-size: 30px;
+        width: 1030px;
+        padding: 0px 200px 80px 0px;
+        margin: 120px 0px 0px 0px;
+        height: 300px;
+        }
+      #head_1 {
+        font-size: 45px;
+        font-weight: 500;
+        text-shadow: 0px 1px 0px;
+        }
+      .ourcause {
+        float: left;
+        position: relative;
+        top: 3010px;
+        width:1130px;
+        height:2345px ;
+        }
+      #merge {
+          float: left;
+          padding-top: 75px;
+        }
+      #image2 {
+        margin: 0px 0px 0px -175px;
+        width: 960px;
+        height: 800px;
+        }
+      #content {
+        border: 1px solid #E5E5E5;
+        width: 950px;
+        font-size: 50px;
+        font-weight: 500;
+        height: 850px;
+        margin: 0px 0px 0px -170px;
+        padding: 55px 0px 0px 70px;
+        }
+      #text1 {
+        float: left;
+        color: #8A8A8A;
+        font-size: 40px;
+        word-spacing: 5px;
+        padding: 25px 0px 0px 2px;
+        }
+      #bubble1,#bubble2,#bubble3 {
+        border: 0.1em solid #E84130;
+        border-radius: 50%;
+        color: white;
+        width: 90px;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 22px 0px 0px 15px;
+        height: 90px;
+        margin: 290px 0px -80px -45px;
+        background-color: #E84130;
+        }
+      #triangle-down {
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 40px solid #E84130;
+        font-size: 0px;
+        margin: -2px 0px 0px 7px;
+        }
+      .progress1 {
+          width: 800px;
+          height: 0.2em;
+          margin-bottom: 0px;
+          overflow: hidden;
+          background-color: #f5f5f5;
+          border-radius: 1px;
+          margin: 90px 0px 0px 0px;
+        }
+      #left {
+          float:left;
+          margin: 50px 0px 0px 0px;
+        }
+      #right {
+          float: right;
+          margin: 50px 70px 0px 0px;
+        }
+      .money {
+          color:#E84432;
+          font-size: 35px;
+        }
+      .story {
+        position: relative;
+        float: left;
+        top: 6460px;
+        width: 1533px;
+        height: 2600px;
+        background-color: black;
+        color: white;
+        }
+      #baby {
+        width: 1030px;
+        height: 750px;
+        }
+      #photo {
+          position: relative;
+          width: 553px;
+          height: 303px;
+          margin-block-start: 150px;
+          margin-inline-start: 57px;
+          filter: brightness(50%);
+        }
+      #play_btn {
+          position: absolute;
+          top: 305px;
+          width: 200px;
+          height: 150px;
+          left: 370px;
+        }
+      #heart {
+        font-size: 70px;
+        }
+      #heart_story {
+          float: right;
+          width: 1010px;
+          font-size: 45px;
+          margin: 600px 422px 0px 0px;
+          word-spacing: 4px;
+        }
+      #passage {
+          width: 1045px;
+          font-size: 40px;
+          margin: 0px 0px 0px 0px;
+          padding: 65px 80px 20px 0px;
+        }
+      .ourgallery {
+        float: left;
+        position: relative;
+        top: 7800px;
+        width:1130px;
+        height:2345px ;
+        }
+      #images {
+          width: 1533px;
+          margin: 75px 0px 0px 0px;
+        }
+      #flow {
+          float: left;
+          margin: 0px 100px 0px -100px;
+        }
+      #picture1 {
+          width: 1230px;
+          height: 600px;
+        }
+      #picture2 {
+          width: 1230px;
+          height:650px;
+        }
+      #picture3 {
+          width: 1230px;
+          height:1500px;
+        }
+      #picture4 {
+          width:1230px;
+          height:500px;
+        }
+      .ourvolunteer {
+          position: relative;
+          width:1130px;
+          top: 11360px;
+          background-color: #F5F5F5;
+          height:2000px;
+        }
+      #volunteers {
+          width:1130px;
+          margin: 25px 0px 0px 350px;
+        }
+      #volunteer {
+          width: 525px;
+          height: 500px;
+          position: absolute;
+          z-index: 1;
+        }
+      #merge1 {
+          float: left;
+          width: 263px;
+          height: 400px;
+          margin: 70px 10px 0px 10px;
+        }
+      .background {
+          position: relative;
+          background-color: white;
+          top: 230px;
+          left: -277px;
+          width: 1045px;
+          height: 900px;
+        }
+      #name {
+          color: #8A8A8A;
+          text-align: center;
+          position: relative;
+          width: 420px;
+          font-size: 45px;
+          margin: -250px 0px 36px 25px;
+          padding: 0px 0px 0px 15px;
+        }
+      #social {
+        margin: 75px 0px 50px 0px;
+        font-size: 40px;
+        width: 500px;
+        height: 100px;
+        padding: 20px 0px 0px 0px;
+        }
+      #icon {
+          position: relative;
+          color: #8A8A8A;
+          border: none;
+          margin: 0px 70px 0px 10px;
+        }
+
+
+
+
+      
+      .categories{
+          background-color: #333333;
+          position: relative;
+          float: left;
+          color: white;
+          top: 11350px;
+          width: 1130px;
+          padding: 81px 0px 63px 366px;
+          height: 1750px;
+      }
+      .btn {
+          position: static;
+        }
+      #mybtn {
+          display: none;
+          position:fixed ;
+          right: 245px;
+          top: 32px;
+          z-index: 1;
+          font-size: 20px;
+          border: none;
+          outline: none;
+          background-color: #E84130;
+          color: white;
+          cursor: pointer;
+          padding: 16px 20px 10px 20px;
+          border-radius: 50%;
+        } 
+      #bottom_navigation{
+        float: left;
+        margin: 0px 0px 0px -340px;
+        padding: 50px 460px 0px 15px;
+      }
+      #bottom_navigation2{
+        float: left;
+        padding: 0px 216px 0px 0px;
+        margin: 50px 426px 0px -325px;
+      }
+      #bottom_navigation3{
+        float: left;
+        padding: 0px 40px 0px 40px;
+        margin: 25px 334px 0px -360px;
+      }
+      #subhead{
+          font-size: 35px;
+      }
+      #other_links{
+        list-style-type: none;
+        color: white;
+        margin: 30px 15px 0px -45px;
+        padding: 5px 90px 5px 5px;
+        font-size: 25px;
+        letter-spacing: 1px;
+        border-bottom: 1px solid #434445;
+        text-shadow: 0px 0px;
+      }
+      #others{
+          border: 1px solid white;
+          list-style-type: none;
+          float: left;
+          padding: 10px 20px 10px 20px;
+          margin: 5px 5px 5px 5px;
+          text-shadow: 0px 0px;
+      }
+      
+      #tags{
+        margin: 25px 0px 0px -43px;
+        width: 372px;
+      }
+
+
+
+
+
+
+
+
+
+
+
+      
+  
+  
+  
+  
+
+
+  }
