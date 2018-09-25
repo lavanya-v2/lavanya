@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>pascal-traiangle</title>
+    </head>
+    <body>
+        <script>
+            function pascal(n) {
+                var result = [];
+                    result[0]= [1];
+                    result[1] = [1,1];
+                for (var row = 2; row < n; row++) {
+                    result[row] = [1];
+                    for (var col = 1; col <= row -1; col++) {
+                        result[row][col] = result[row-1][col] + result[row-1][col-1];
+                        result[row].push(1);
+                    }
+                }
+                return result;
+            }
+
+            for (var i = 0; i < pascal(5).length; i++) {
+                document.write("<center>");
+                document.write(pascal(5)[i]+"<br>");
+                console.log(pascal(5)[i]+"<br>");
+            }
+
+            /*
+            createPascalTriangle(5);
+            function createPascalTriangle (5) {
+                var pascalTriangle = [];
+
+                for (var i = 0; i < 5; i++) { 
+                  pascalTriangle[i] = new Array(i+1);
+                
+                  for (var j = 0; j < i+1; j++) {            
+                    if (j === 0 || j === i) {
+                      pascalTriangle[i][j] = 1;
+                    } else {
+                      pascalTriangle[i][j] = pascalTriangle[i-1][j-1] + pascalTriangle[i-1][j];
+                    }
+                  }
+                }
+
+            for (var i = 0; i < createPascalTriangle(5).length; i++) {
+                document.write(createPascalTriangle(5)[i]+"<br>");
+                console.log(createPascalTriangle(5)[i]+"<br>");
+            }
+        }*/
+        </script>
+    </body>
+</html>
