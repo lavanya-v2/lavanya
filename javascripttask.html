@@ -1,0 +1,102 @@
+<html>
+    <body>
+        <script>
+            
+            function identity(arg) {
+                return arg;
+            }
+
+            function add(a,b) {
+                return a+b;
+            }
+            function mul(a,b) {
+                return a*b;
+            }
+
+            function identityf(arg) {
+                function idf() {return arg;}
+                return idf();
+            }
+            
+            function addf(identity,identity) {
+                add(identity(3),identity(4));
+
+            }
+            function funct() {
+                var arg;
+                function function1() {arg=3;}
+                function1();
+                    return arg;  
+            }
+
+            function addition() {
+                var result=0;
+                function add_first(arg1) {result=result+arg1;}
+                function add_sec(arg2) {result=result+arg2;}
+                add_first(3);
+                add_sec(4);
+                    return result;
+            }
+
+            function binaryaddition() {
+                var result=0;
+                function numadd(a,b) {result=0;}
+                function addfirst(arg1) {result=result+arg1;}
+                function addsec(arg2) {result=result+arg2;}
+                var a=addfirst(3);
+                var b=addsec(4);
+                    return result;
+            }
+
+            function binarymultiplication() {
+                var result=1;
+                function nummul(a,b) {result=1;}
+                function addfirst(arg1) {result=result*arg1;}
+                function addsec(arg2) {result=result*arg2;}
+                var a=addfirst(5);
+                var b=addsec(6);
+                    return result;
+            }
+
+            function sumation() {
+                var result=0;
+                function sum(first,arg2) { result=result+arg2;return result;}
+                function first(arg1) {result=result+arg1; return result;} 
+                sum(first,3);
+                return first(4);
+            }
+
+            function multiplication() {
+                var result=1;
+                function sum(first,arg2) { result=result*arg2;}
+                function first(arg1) {result=result*arg1;}
+                sum(first,3);
+                first(4);
+                 return result;
+            }
+            
+            function increament() {
+                var result=0;
+                var output=add(result,5);
+                return add(output,1);
+            }
+
+
+
+            console.log(identity(3));
+            console.log(add(3,4));
+            console.log(mul(3,4));
+            console.log(identityf(3));
+            
+            console.log(funct());
+            console.log(addition());
+            console.log(binaryaddition());
+            console.log(binarymultiplication());
+            console.log(sumation());
+            console.log(multiplication());
+            console.log(increament());
+            console.log(increament(increament()));
+            console.log();
+        </script>
+    </body>
+</html>
