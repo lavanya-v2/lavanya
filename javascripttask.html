@@ -14,89 +14,61 @@
             }
 
             function identityf(arg) {
-                function idf() {return arg;}
+                function idf() {return arg;};
                 return idf();
             }
             
-            function addf(identity,identity) {
-                add(identity(3),identity(4));
-
-            }
-            function funct() {
-                var arg;
-                function function1() {arg=3;}
-                function1();
-                    return arg;  
+            function addf(x) {
+                return function(y) {return x + y;};
             }
 
-            function addition() {
-                var result=0;
-                function add_first(arg1) {result=result+arg1;}
-                function add_sec(arg2) {result=result+arg2;}
-                add_first(3);
-                add_sec(4);
-                    return result;
+            function applyf(binary) {
+                return function(x) {return function(y) {return binary(x, y);};};
+            }
+            addf = applyf(add);
+            applyf(mul)(5)(6);
+            
+            function curry(binary, x) {
+                return function(y) {return binary(x, y);};
             }
 
-            function binaryaddition() {
-                var result=0;
-                function numadd(a,b) {result=0;}
-                function addfirst(arg1) {result=result+arg1;}
-                function addsec(arg2) {result=result+arg2;}
-                var a=addfirst(3);
-                var b=addsec(4);
-                    return result;
-            }
+            function liftf(x) {
+                return function (y) {return function (z) {return x(y, z);};}
+            }            
+            var inc = addf(1);
+            var inc = curry(add, 1);
+            var inc = liftf(add)(1);
 
-            function binarymultiplication() {
-                var result=1;
-                function nummul(a,b) {result=1;}
-                function addfirst(arg1) {result=result*arg1;}
-                function addsec(arg2) {result=result*arg2;}
-                var a=addfirst(5);
-                var b=addsec(6);
-                    return result;
+            function methodize(binary) {
+                return function(y) {return binary(this, y);};
             }
+            Number.prototype.add = methodize(add);
 
-            function sumation() {
-                var result=0;
-                function sum(first,arg2) { result=result+arg2;return result;}
-                function first(arg1) {result=result+arg1; return result;} 
-                sum(first,3);
-                return first(4);
+            function twice(binary) {
+                return function(x) {return binary(x, x);};
             }
+            var double = twice(add);
+            var square =  twice(mul);
 
-            function multiplication() {
-                var result=1;
-                function sum(first,arg2) { result=result*arg2;}
-                function first(arg1) {result=result*arg1;}
-                sum(first,3);
-                first(4);
-                 return result;
+            function composeu(f, g) {
+                return function(x) {return g(f(x));};
             }
             
-            function increament() {
-                var result=0;
-                var output=add(result,5);
-                return add(output,1);
-            }
-
-
-
-            console.log(identity(3));
-            console.log(add(3,4));
-            console.log(mul(3,4));
-            console.log(identityf(3));
-            
-            console.log(funct());
-            console.log(addition());
-            console.log(binaryaddition());
-            console.log(binarymultiplication());
-            console.log(sumation());
-            console.log(multiplication());
-            console.log(increament());
-            console.log(increament(increament()));
-            console.log();
+            document.writeln("function that takes an argument and returns that argument.\t" +identity(3) + "<br><br>");
+            document.writeln("binary functions, add\t " +add(3,4) + "<br><br>");
+            document.writeln("binary functions, mul \t" +mul(3,4) + "<br><br>");
+            document.writeln("function that returns that argument.\t" +identityf(3) + "<br><br>");
+            document.writeln(" function that adds from two invocations\t" +addf(3)(4) + "<br><br>");
+            document.writeln("binary function,two invocations add\t" +addf(3)(4) + "<br><br>");
+            document.writeln("binary function,two invocations mul\t" +applyf(mul)(5)(6) + "<br><br>");
+            document.writeln("function that supply sec-arg add\t" +curry(add,3)(4) + "<br><br>");
+            document.writeln("function that supply sec-arg mul\t" +curry(mul,3)(4) + "<br><br>");
+            document.writeln("increament\t" +inc(5) + "<br><br>");
+            document.writeln("increament twice\t" +inc(inc(5)) + "<br><br>");
+            document.writeln("binary function to a method.\t" +(3).add(4) + "<br><br>");
+            document.writeln("unary to binary- double\t" +double(11) + "<br><br>");
+            document.writeln("unary to binary-square\t" +square(11) + "<br><br>");
+            document.writeln("returns a unary function\t" +composeu(double, square)(3) + "<br><br>");
         </script>
     </body>
 </html>
