@@ -1,0 +1,74 @@
+<html>
+    <body>
+        <script>
+            
+            function identity(arg) {
+                return arg;
+            }
+
+            function add(a,b) {
+                return a+b;
+            }
+            function mul(a,b) {
+                return a*b;
+            }
+
+            function identityf(arg) {
+                function idf() {return arg;};
+                return idf();
+            }
+            
+            function addf(x) {
+                return function(y) {return x + y;};
+            }
+
+            function applyf(binary) {
+                return function(x) {return function(y) {return binary(x, y);};};
+            }
+            addf = applyf(add);
+            applyf(mul)(5)(6);
+            
+            function curry(binary, x) {
+                return function(y) {return binary(x, y);};
+            }
+
+            function liftf(x) {
+                return function (y) {return function (z) {return x(y, z);};}
+            }            
+            var inc = addf(1);
+            var inc = curry(add, 1);
+            var inc = liftf(add)(1);
+
+            function methodize(binary) {
+                return function(y) {return binary(this, y);};
+            }
+            Number.prototype.add = methodize(add);
+
+            function twice(binary) {
+                return function(x) {return binary(x, x);};
+            }
+            var double = twice(add);
+            var square =  twice(mul);
+
+            function composeu(f, g) {
+                return function(x) {return g(f(x));};
+            }
+            
+            document.writeln("function that takes an argument and returns that argument.\t" +identity(3) + "<br><br>");
+            document.writeln("binary functions, add\t " +add(3,4) + "<br><br>");
+            document.writeln("binary functions, mul \t" +mul(3,4) + "<br><br>");
+            document.writeln("function that returns that argument.\t" +identityf(3) + "<br><br>");
+            document.writeln(" function that adds from two invocations\t" +addf(3)(4) + "<br><br>");
+            document.writeln("binary function,two invocations add\t" +addf(3)(4) + "<br><br>");
+            document.writeln("binary function,two invocations mul\t" +applyf(mul)(5)(6) + "<br><br>");
+            document.writeln("function that supply sec-arg add\t" +curry(add,3)(4) + "<br><br>");
+            document.writeln("function that supply sec-arg mul\t" +curry(mul,3)(4) + "<br><br>");
+            document.writeln("increament\t" +inc(5) + "<br><br>");
+            document.writeln("increament twice\t" +inc(inc(5)) + "<br><br>");
+            document.writeln("binary function to a method.\t" +(3).add(4) + "<br><br>");
+            document.writeln("unary to binary- double\t" +double(11) + "<br><br>");
+            document.writeln("unary to binary-square\t" +square(11) + "<br><br>");
+            document.writeln("returns a unary function\t" +composeu(double, square)(3) + "<br><br>");
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Pyramid1</title>
+    </head>
+    <body>
+        <pre>
+        <script>
+            pyramid1(5);
+            function pyramid1(rows) {
+                var cols=rows*2-1;
+                var sp=cols/2;
+                var num=1;
+
+                for(var i=1; i<=rows;i++) {
+                    document.write("<center>");
+                    for(var j=1; j<=num; j++) {
+                        document.write("1");
+                    }
+
+                    document.writeln();
+                    sp=sp-1;
+                    num=num+2;
+                }
+            }
+        </script>
+        </pre>
+    </body>
+</html>

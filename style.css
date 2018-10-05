@@ -1,0 +1,27 @@
+figure
+{
+float:left;
+}
+
+body
+{
+  background-color:darkkhaki;
+}
+
+img
+{
+width:250px;
+height:250px;
+}
+
+h1
+{
+ font-size:100px;
+ text-align: center;
+ color: darkgreen;
+}
+
+figcaption
+{
+    text-align: left;
+}
